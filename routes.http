@@ -1,0 +1,35 @@
+POST http://localhost:3333/gato
+Content-Type: application/json
+
+{
+    "nome": "Minnie",
+    "raca": "LaPerm",
+    "cor": "Amarelo/Laranja",
+    "peso": "4kg",
+    "sexo": "Fêmea"
+}
+
+###
+
+GET http://localhost:3333/gato
+
+###
+
+GET http://localhost:3333/gato?search=IFMS
+
+###
+
+PUT http://localhost:3333/gatos/84bbd1c8-291e-41db-aa27-4b65c85fbc63
+Content-Type: application/json
+
+{
+    "nome": "Kako",
+    "raca": "Scottish Fold",
+    "cor": "Cinza",
+    "peso": "5kg",
+    "sexo": "Macho"
+}
+
+###
+
+DELETE http://localhost:3333/gatos/fd82c12f-bddd-4de1-9341-77a670d56845
